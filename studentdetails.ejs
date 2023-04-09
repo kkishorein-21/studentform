@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index1.css">
+    <title>Student Details</title>
+</head>
+<body>
+    <h1>Student List</h1>
+        <% if(studentdetails.length>0){ %>
+        <% for( var i=0;i<studentdetails.length;i++){ %>
+        <h3>FirstName: <%- studentdetails[i].FirstName %> </h3>
+        <h3>LastName: <%- studentdetails[i].LastName %></h3 >
+        <h3 >Email: <%- studentdetails[i].Email %></h3 >
+        <h3 >Mobile: <%- studentdetails[i].Mobile %></h3 >
+        <h3 >DOB: <%- studentdetails[i].DOB %></h3 >
+        <h3 >Gender: <%- studentdetails[i].Gender %></h3 >
+        <h3 >Address 1: <%- studentdetails[i].Address1 %></h3 >
+        <h3 >Address 2:<%- studentdetails[i].Address2 %></h3 >
+        <h3 >City:<%- studentdetails[i].City %></h3 >
+        <h3 >State:<%- studentdetails[i].State %></h3 >
+        <h3 >Pin Code:<%- studentdetails[i].PinCode %></h3 >
+        <h3 >Country:<%- studentdetails[i].Country %></h3 >
+        <hr>
+            <% }  %>
+            <% } else{%>
+            <h2>Student details not found <h2>
+                <% } %>
+        <h4>Powered by WorldLine</h4>
+</body>
+</html>
